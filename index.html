@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 To-Do List</h1>
+      <button id="theme-toggle">🌙</button>
+    </header>
+
+    <div class="input-section">
+      <input type="text" id="task-input" placeholder="Nhập công việc của bạn..." />
+      <button id="add-btn">Thêm</button>
+    </div>
+
+    <div class="filter-section">
+      <input type="text" id="search-input" placeholder="Tìm kiếm..." />
+      <select id="filter">
+        <option value="all">Tất cả</option>
+        <option value="completed">Hoàn thành</option>
+        <option value="pending">Chưa hoàn thành</option>
+      </select>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
